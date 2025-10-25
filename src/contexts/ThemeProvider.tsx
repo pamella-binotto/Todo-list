@@ -1,12 +1,12 @@
-import { createContext, useState } from "react";
+import { useState } from "react";
+import { ThemeContext, type ThemeName } from "./ThemeContext";
 
-export const ThemeContext = createContext({});
 
 interface ThemeProviderProps {
     children: React.ReactNode
 }
 
-type ThemeName = 'light' | 'dark';
+
 
 export const ThemeProvider = ({ children }: ThemeProviderProps) => {
     
